@@ -53,7 +53,6 @@ export default function GenerateIdeia() {
           }}
         />
       </View>
-      <View style={styles.blur2}></View>
     </View>
   );
 }
@@ -78,6 +77,17 @@ const styles = StyleSheet.create({
     borderRadius: 35,
     marginTop: 13,
     marginBottom: 13,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 3,
+    },
+    shadowOpacity: 0.27,
+    shadowRadius: 4.65,
+    zIndex: -1,
+
+    elevation: 6,
+    zIndex:-1,
   },
   externalCard: {
     backgroundColor: "#54329C",
@@ -86,6 +96,17 @@ const styles = StyleSheet.create({
     borderRadius: 35,
     marginTop: 13,
     marginBottom: 13,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 3,
+    },
+    shadowOpacity: 0.27,
+    shadowRadius: 4.65,
+    zIndex: -1,
+
+    elevation: 6,
+    
   },
   innovativeCard: {
     backgroundColor: "#7A329C",
@@ -94,6 +115,17 @@ const styles = StyleSheet.create({
     borderRadius: 35,
     marginTop: 13,
     marginBottom: 53,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 3,
+    },
+    shadowOpacity: 0.27,
+    shadowRadius: 4.65,
+    zIndex: -1,
+
+    elevation: 6,
+    zIndex:-11,
   },
   textCard: {
     color: "white",
@@ -105,6 +137,17 @@ const styles = StyleSheet.create({
   buttonText: {
     marginLeft: 8,
     marginTop: 12,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 3,
+    },
+    shadowOpacity: 0.27,
+    shadowRadius: 4.65,
+    zIndex: -1,
+
+    elevation: 6,
+    zIndex:-1,
   },
   buttonCard: {
     width: 105,
@@ -121,14 +164,5 @@ const styles = StyleSheet.create({
     marginLeft: -145,
     marginTop: 12.9,
   },
-  blur2: {
-    position: "absolute",
-    backgroundColor: "#823EF1",
-    width: 290,
-    height: 290,
-    left: 160,
-    bottom: -70,
-    borderRadius: 10000,
-    zIndex: -1,
-  },
+
 });

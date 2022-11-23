@@ -10,10 +10,10 @@ export default function Home() {
     <View style={styles.container}>
       <ScrollView>
         <View>
-        <Header />
-        <CreateIdeiaCard />
-        <GenerateIdeia />
-        </View>  
+          <Header />
+          <CreateIdeiaCard />
+          <GenerateIdeia />
+        </View>
       </ScrollView>
       <Menu />
     </View>

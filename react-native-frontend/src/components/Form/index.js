@@ -15,7 +15,6 @@ export default function Form() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
   },
   content: {
     backgroundColor: "#f5f5f5",
@@ -24,14 +23,24 @@ const styles = StyleSheet.create({
     marginTop: 25,
     marginLeft: 25,
     borderRadius: 15,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 3,
+    },
+    shadowOpacity: 0.27,
+    shadowRadius: 4.65,
+
+    elevation: 6,
   },
   camp: {
     margin: 13,
+    paddingLeft: 33,
     width: 300,
-    height: 50,
-    borderRadius: 25,
+    height: 60,
+    borderRadius: 45,
     backgroundColor: "#BABABA",
     textAlignVertical: "center",
-    textAlign: "center",
+    textAlign: "left",
   },
 });

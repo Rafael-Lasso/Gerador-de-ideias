@@ -1,22 +1,24 @@
-import { StyleSheet, Text, View, Image } from "react-native";
+import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
 
 export default function Header() {
   return (
     <View style={styles.container}>
       <View style={styles.blur1}></View>
-      
+
       <View style={styles.Header}>
         <View style={styles.mainMessage}>
           <Text style={styles.hello}>Olá</Text>
           <Text style={styles.name}>Seu Nome</Text>
         </View>
       </View>
-      <Image
-        style={styles.profile}
-        source={{
-          uri: "https://www.promoview.com.br/uploads/images/unnamed%2819%29.png",
-        }}
-      />
+      <TouchableOpacity>
+        <Image
+          style={styles.profile}
+          source={{
+            uri: "https://www.promoview.com.br/uploads/images/unnamed%2819%29.png",
+          }}
+        />
+      </TouchableOpacity>
     </View>
   );
 }
@@ -55,6 +57,13 @@ const styles = StyleSheet.create({
     width: 44,
     height: 46,
     borderRadius: 100,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 5,
+      height: 3,
+    },
+    shadowRadius: 4.65,
+    elevation: 6,
   },
   blur1: {
     position: "absolute",
