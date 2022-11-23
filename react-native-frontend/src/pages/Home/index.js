@@ -9,9 +9,11 @@ export default function Home() {
   return (
     <View style={styles.container}>
       <ScrollView>
+        <View>
         <Header />
         <CreateIdeiaCard />
         <GenerateIdeia />
+        </View>  
       </ScrollView>
       <Menu />
     </View>
@@ -21,6 +23,5 @@ export default function Home() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
   },
 });

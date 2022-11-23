@@ -6,7 +6,7 @@ import Profile from './src/pages/Profile';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Profile/>
+      <Home/>
     </View>
   );
 }

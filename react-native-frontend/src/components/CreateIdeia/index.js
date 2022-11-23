@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image } from "react-native";
+import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
 
 export default function CreateIdeiaCard() {
   return (
@@ -7,7 +7,7 @@ export default function CreateIdeiaCard() {
         <View style={styles.Maincard}>
           <Text style={styles.textCard}>Não sabe nem por onde começar</Text>
           <View style={styles.buttonCard}>
-            <Text style={styles.buttonText}>Gerar Ideia</Text>
+          <TouchableOpacity style={styles.buttonText}><Text>Gerar Ideia</Text></TouchableOpacity>
           </View>
         </View>
         <Image

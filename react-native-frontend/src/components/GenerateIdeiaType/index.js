@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image } from "react-native";
+import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
 
 export default function GenerateIdeia() {
   return (
@@ -9,7 +9,9 @@ export default function GenerateIdeia() {
         <View style={styles.internalCard}>
           <Text style={styles.textCard}>Problemas dentro da empresa ?</Text>
           <View style={styles.buttonCard}>
-            <Text style={styles.buttonText}>Gerar Ideia</Text>
+            <TouchableOpacity style={styles.buttonText}>
+              <Text>Gerar Ideia</Text>
+            </TouchableOpacity>
           </View>
         </View>
         <Image
@@ -23,7 +25,9 @@ export default function GenerateIdeia() {
         <View style={styles.externalCard}>
           <Text style={styles.textCard}>Problema fora de alcance ?</Text>
           <View style={styles.buttonCard}>
-            <Text style={styles.buttonText}>Gerar Ideia</Text>
+            <TouchableOpacity style={styles.buttonText}>
+              <Text>Gerar Ideia</Text>
+            </TouchableOpacity>
           </View>
         </View>
         <Image
@@ -37,7 +41,9 @@ export default function GenerateIdeia() {
         <View style={styles.innovativeCard}>
           <Text style={styles.textCard}>Tenha uma ideia Inovadora!</Text>
           <View style={styles.buttonCard}>
-            <Text style={styles.buttonText}>Gerar Ideia</Text>
+            <TouchableOpacity style={styles.buttonText}>
+              <Text>Gerar Ideia</Text>
+            </TouchableOpacity>
           </View>
         </View>
         <Image
@@ -123,6 +129,6 @@ const styles = StyleSheet.create({
     left: 160,
     bottom: -70,
     borderRadius: 10000,
-    zIndex: -1
+    zIndex: -1,
   },
 });

@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
     width: 380,
     height: 380,
     right: 160,
-    bottom: -50,
+    bottom: -80,
     borderRadius: 10000,
   },
 });
