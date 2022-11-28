@@ -1,26 +1,28 @@
-import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
+import * as React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-import Home from "../../pages/Home/index";
+import { StyleSheet, Text, View, TouchableOpacity, Button } from "react-native";
 
-const newHome = Home;
+import Home from "../../pages/Home";
+import Profile from "../../pages/Profile";
 
 export default function Menu() {
   return (
     <View>
       <View style={styles.blur2}></View>
       <View style={styles.navigator}>
-        <TouchableOpacity onPress={newHome} style={styles.NavList}>
-          <Text>Home</Text>
-        </TouchableOpacity>
-        <TouchableOpacity onPress={newHome} style={styles.NavList}>
-          <Text>Pesquisar</Text>
-        </TouchableOpacity>
-        <TouchableOpacity onPress={newHome} style={styles.NavList}>
-          <Text>Perfil</Text>
-        </TouchableOpacity>
-        <TouchableOpacity onPress={newHome} style={styles.NavList}>
-          <Text>Configuração</Text>
-        </TouchableOpacity>
+        <Button
+          title="Home"
+          style={styles.NavList}
+          onPress={() => navigation.navigate("Home")}
+        ></Button>
+        <Button
+          title="Perfil"
+          style={styles.NavList}
+          // style={styles.NavList}
+          onPress={() => navigation.navigate("Profile")}
+        ></Button>
       </View>
     </View>
   );
@@ -36,6 +38,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "#EAEAEA",
     position: "relative",
+    justifyContent: "space-around",
     zIndex: 111,
     shadowColor: "#000",
     shadowOffset: {
@@ -48,9 +51,7 @@ const styles = StyleSheet.create({
     elevation: 6,
   },
   NavList: {
-    alignItems: "center",
-    marginLeft: 22,
-    marginRight: 5,
+    fontSize: 33,
   },
   blur2: {
     position: "absolute",
@@ -60,5 +61,6 @@ const styles = StyleSheet.create({
     left: 280,
     bottom: -70,
     borderRadius: 10000,
+    zIndex: -1,
   },
 });

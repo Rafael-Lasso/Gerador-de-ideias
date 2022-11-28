@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
+import { StyleSheet, Text, View, Image, Button } from "react-native";
 
 export default function GenerateIdeia() {
   return (
@@ -9,9 +9,7 @@ export default function GenerateIdeia() {
         <View style={styles.internalCard}>
           <Text style={styles.textCard}>Problemas dentro da empresa ?</Text>
           <View style={styles.buttonCard}>
-            <TouchableOpacity style={styles.buttonText}>
-              <Text>Gerar Ideia</Text>
-            </TouchableOpacity>
+            <Button title="Gerar Ideia" style={styles.buttonText}></Button>
           </View>
         </View>
         <Image
@@ -25,9 +23,7 @@ export default function GenerateIdeia() {
         <View style={styles.externalCard}>
           <Text style={styles.textCard}>Problema fora de alcance ?</Text>
           <View style={styles.buttonCard}>
-            <TouchableOpacity style={styles.buttonText}>
-              <Text>Gerar Ideia</Text>
-            </TouchableOpacity>
+            <Button title="Gerar Ideia" style={styles.buttonText}></Button>
           </View>
         </View>
         <Image
@@ -41,9 +37,7 @@ export default function GenerateIdeia() {
         <View style={styles.innovativeCard}>
           <Text style={styles.textCard}>Tenha uma ideia Inovadora!</Text>
           <View style={styles.buttonCard}>
-            <TouchableOpacity style={styles.buttonText}>
-              <Text>Gerar Ideia</Text>
-            </TouchableOpacity>
+            <Button title="Gerar Ideia" style={styles.buttonText}></Button>
           </View>
         </View>
         <Image
@@ -60,7 +54,6 @@ export default function GenerateIdeia() {
 const styles = StyleSheet.create({
   container: {
     marginLeft: 30,
-    backgroundColor: "#fff",
   },
   TypeIdeia: {
     fontSize: 20,
@@ -87,7 +80,7 @@ const styles = StyleSheet.create({
     zIndex: -1,
 
     elevation: 6,
-    zIndex:-1,
+    zIndex: -1,
   },
   externalCard: {
     backgroundColor: "#54329C",
@@ -106,7 +99,6 @@ const styles = StyleSheet.create({
     zIndex: -1,
 
     elevation: 6,
-    
   },
   innovativeCard: {
     backgroundColor: "#7A329C",
@@ -125,7 +117,7 @@ const styles = StyleSheet.create({
     zIndex: -1,
 
     elevation: 6,
-    zIndex:-11,
+    zIndex: -11,
   },
   textCard: {
     color: "white",
@@ -147,7 +139,7 @@ const styles = StyleSheet.create({
     zIndex: -1,
 
     elevation: 6,
-    zIndex:-1,
+    zIndex: -1,
   },
   buttonCard: {
     width: 105,
@@ -164,5 +156,4 @@ const styles = StyleSheet.create({
     marginLeft: -145,
     marginTop: 12.9,
   },
-
 });

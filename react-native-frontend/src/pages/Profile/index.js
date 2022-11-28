@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { StyleSheet, ScrollView, View, Image, Text } from "react-native";
+import { StyleSheet, ScrollView, View, Image, Text, Button } from "react-native";
 
 import Header from "../../components/Header";
 import Menu from "../../components/Menu";
 import Form from "../../components/Form";
 
-export default function Profile() {
+export default function Profile({ navigation }) {
   return (
     <View style={styles.container}>
       <ScrollView>
@@ -64,7 +64,18 @@ export default function Profile() {
           </ScrollView>
         </View>
       </ScrollView>
-      <Menu />
+      <View style={styles.navigator}>
+        <Button
+          title="Home"
+          style={styles.NavList}
+          onPress={() => navigation.navigate("Principal")}
+        ></Button>
+        <Button
+          title="Perfil"
+          style={styles.NavList}
+          onPress={() => navigation.navigate("Perfil")}
+        ></Button>
+      </View>
     </View>
   );
 }
@@ -161,5 +172,39 @@ const styles = StyleSheet.create({
     height: 170,
     marginLeft: -145,
     marginTop: 12.9,
+  },
+  navigator: {
+    width: 380,
+    height: 79,
+    margin: 15,
+    borderRadius: 25,
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "#EAEAEA",
+    position: "relative",
+    justifyContent: "space-around",
+    zIndex: 111,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 3,
+    },
+    shadowOpacity: 0.17,
+    shadowRadius: 4.65,
+    zIndex: -1,
+    elevation: 6,
+  },
+  NavList: {
+    fontSize: 33,
+  },
+  blur2: {
+    position: "absolute",
+    backgroundColor: "#823EF1",
+    width: 260,
+    height: 260,
+    left: 280,
+    bottom: -70,
+    borderRadius: 10000,
+    zIndex: -1,
   },
 });

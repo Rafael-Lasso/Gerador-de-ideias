@@ -30,7 +30,6 @@ const styles = StyleSheet.create({
     marginLeft: 50,
     display: "flex",
     flexDirection: "row",
-    backgroundColor: "#fff",
   },
   Header: {
     alignItems: "center",
