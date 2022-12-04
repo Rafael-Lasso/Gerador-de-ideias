@@ -1,13 +1,17 @@
 import { StyleSheet, Text, View, Image, Button } from "react-native";
 
-export default function CreateIdeiaCard() {
+export default function CreateIdeiaCard({ navigation }) {
   return (
     <View style={styles.container}>
       <View style={styles.card}>
         <View style={styles.Maincard}>
-          <Text style={styles.textCard}>Não sabe nem por onde começar</Text>
+          <Text style={styles.textCard}>Como se usa ?</Text>
           <View style={styles.buttonCard}>
-          <Button title="Gerar Ideia" style={styles.buttonText}></Button>
+            <Button
+              onPress={() => navigation.navigate("IdeiaForm")}
+              title="Gerar Ideia"
+              style={styles.buttonText}
+            ></Button>
           </View>
         </View>
         <Image

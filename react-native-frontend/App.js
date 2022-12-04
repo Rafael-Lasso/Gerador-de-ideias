@@ -16,9 +16,9 @@ export default function App() {
         <Stack.Navigator>
           <Stack.Screen name="Principal" component={Home} />
           <Stack.Screen name="Perfil" component={Profile} />
+          <Stack.Screen name="Que tal se..." component={IdeiaForm} />
         </Stack.Navigator>
       </NavigationContainer>
-      {/* <IdeiaForm/> */}
     </View>
   );
 }

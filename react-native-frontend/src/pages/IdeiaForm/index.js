@@ -4,15 +4,16 @@ export default function IdeiaForm() {
   return (
     <View style={styles.container}>
       <View style={styles.InfoContainer}>
-      <Text style={styles.message}>Gere uma ideia em grupo</Text>
-      <Text style={styles.subMessage}>
-        Sera em grupo de 4 mas pode ser realizado sosinho se não puder, cada um
-        ira responder a pergunta que aparecer, depois que todas as perguntas
-        forem preenchidas devem conversar entre voces para tentar advinhar a
-        ideia que pode vir
-      </Text>
+        <Text style={styles.message}>Gere uma ideia em grupo</Text>
+        <Text style={styles.subMessage}>
+          Para ser realizado deveram ser feitos dois grupos com pelo menos 4
+          pessoas, enquanto uma pessoa vai falando o que prescisa os
+          participantes vão asinalar os topicos que acreditam ser reelevantes no
+          final os grupos deveram escolher qual é a melhor ideia para a situação
+          e defendela, assim quando o responsavel pela escolha escolher uma
+          ideia é ponto para o grupo, quem fizer 5 pontos primeiro ganha
+        </Text>
       </View>
-      <View style={styles.form}></View>
     </View>
   );
 }
@@ -32,14 +33,5 @@ const styles = StyleSheet.create({
     textAlign: "justify",
     margin: 15,
     marginRight: 15,
-  },
-  form: {
-    marginTop: 25,
-    marginRight: 20,
-    backgroundColor: "#d1d1d1",
-    borderRadius: 30,
-    width: 340,
-    height: 200,
-    alignSelf: "center",
   },
 });

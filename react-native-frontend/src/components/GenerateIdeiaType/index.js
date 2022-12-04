@@ -7,7 +7,7 @@ export default function GenerateIdeia() {
 
       <View style={styles.card}>
         <View style={styles.internalCard}>
-          <Text style={styles.textCard}>Problemas dentro da empresa ?</Text>
+          <Text style={styles.textCard}>Planejamento estratégico</Text>
           <View style={styles.buttonCard}>
             <Button title="Gerar Ideia" style={styles.buttonText}></Button>
           </View>
@@ -21,7 +21,7 @@ export default function GenerateIdeia() {
       </View>
       <View style={styles.card}>
         <View style={styles.externalCard}>
-          <Text style={styles.textCard}>Problema fora de alcance ?</Text>
+          <Text style={styles.textCard}>Resolução de problemas</Text>
           <View style={styles.buttonCard}>
             <Button title="Gerar Ideia" style={styles.buttonText}></Button>
           </View>
@@ -35,7 +35,7 @@ export default function GenerateIdeia() {
       </View>
       <View style={styles.card}>
         <View style={styles.innovativeCard}>
-          <Text style={styles.textCard}>Tenha uma ideia Inovadora!</Text>
+          <Text style={styles.textCard}>Tenha uma Ideia Inovadora!</Text>
           <View style={styles.buttonCard}>
             <Button title="Gerar Ideia" style={styles.buttonText}></Button>
           </View>

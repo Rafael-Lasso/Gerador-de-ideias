@@ -4,9 +4,6 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import { StyleSheet, Text, View, TouchableOpacity, Button } from "react-native";
 
-import Home from "../../pages/Home";
-import Profile from "../../pages/Profile";
-
 export default function Menu() {
   return (
     <View>
@@ -20,7 +17,6 @@ export default function Menu() {
         <Button
           title="Perfil"
           style={styles.NavList}
-          // style={styles.NavList}
           onPress={() => navigation.navigate("Profile")}
         ></Button>
       </View>

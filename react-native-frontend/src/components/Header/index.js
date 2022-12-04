@@ -7,7 +7,7 @@ export default function Header() {
 
       <View style={styles.Header}>
         <View style={styles.mainMessage}>
-          <Text style={styles.hello}>Olá</Text>
+          <Text style={styles.hello}>Olá</Text> 
           <Text style={styles.name}>Seu Nome</Text>
         </View>
       </View>

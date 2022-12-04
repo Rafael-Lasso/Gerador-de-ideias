@@ -1,8 +1,13 @@
 import React, { useState } from "react";
-import { StyleSheet, ScrollView, View, Image, Text, Button } from "react-native";
+import {
+  StyleSheet,
+  ScrollView,
+  View,
+  Image,
+  Text,
+  Button,
+} from "react-native";
 
-import Header from "../../components/Header";
-import Menu from "../../components/Menu";
 import Form from "../../components/Form";
 
 export default function Profile({ navigation }) {

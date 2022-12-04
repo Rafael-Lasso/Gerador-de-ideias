@@ -1,9 +1,14 @@
-import { StyleSheet, ScrollView, View, Button } from "react-native";
+import {
+  StyleSheet,
+  ScrollView,
+  View,
+  Text,
+  Image,
+  Button,
+} from "react-native";
 
 import Header from "../../components/Header";
-import CreateIdeiaCard from "../../components/CreateIdeia";
 import GenerateIdeia from "../../components/GenerateIdeiaType";
-import Menu from "../../components/Menu";
 
 export default function Home({ navigation }) {
   return (
@@ -11,7 +16,24 @@ export default function Home({ navigation }) {
       <ScrollView>
         <View>
           <Header />
-          <CreateIdeiaCard />
+          <View style={styles.card}>
+            <View style={styles.Maincard}>
+              <Text style={styles.textCard}>Entenda como jogar!</Text>
+              <View style={styles.buttonCard}>
+                <Button
+                  onPress={() => navigation.navigate("Que tal se...")}
+                  title="O Jogo"
+                  style={styles.buttonText}
+                ></Button>
+              </View>
+            </View>
+            <Image
+              style={styles.nextSteps}
+              source={{
+                uri: "https://images.squarespace-cdn.com/content/v1/581b0af76a49632b8e102924/1561831291801-6AJMBNAHF9SHXGWKR0C8/3+important+things+to+know+before+buying+a+condo.png",
+              }}
+            />
+          </View>
           <GenerateIdeia />
         </View>
       </ScrollView>
@@ -71,5 +93,41 @@ const styles = StyleSheet.create({
     bottom: -70,
     borderRadius: 10000,
     zIndex: -1,
+  },
+  card: {
+    flexDirection: "row",
+    alignSelf: "center",
+  },
+  Maincard: {
+    backgroundColor: "#842A9A",
+    width: 360,
+    height: 173,
+    borderRadius: 35,
+  },
+  textCard: {
+    color: "white",
+    width: 150,
+    fontSize: 15,
+    marginLeft: 25,
+    marginTop: 35,
+  },
+  buttonText: {
+    marginLeft: 8,
+    marginTop: 12,
+  },
+  buttonCard: {
+    width: 105,
+    height: 50,
+    fontSize: 15,
+    marginLeft: 25,
+    marginTop: 20,
+    backgroundColor: "#fff",
+    borderRadius: 15,
+  },
+  nextSteps: {
+    width: 125,
+    height: 170,
+    marginLeft: -145,
+    marginTop: 12.9,
   },
 });
