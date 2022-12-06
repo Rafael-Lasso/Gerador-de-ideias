@@ -5,7 +5,7 @@ import {
   View,
   Image,
   Text,
-  Button,
+  TouchableOpacity,
 } from "react-native";
 
 import Form from "../../components/Form";
@@ -70,16 +70,18 @@ export default function Profile({ navigation }) {
         </View>
       </ScrollView>
       <View style={styles.navigator}>
-        <Button
-          title="Home"
-          style={styles.NavList}
-          onPress={() => navigation.navigate("Principal")}
-        ></Button>
-        <Button
-          title="Perfil"
-          style={styles.NavList}
-          onPress={() => navigation.navigate("Perfil")}
-        ></Button>
+      <TouchableOpacity
+            style={styles.NavList}
+            onPress={() => navigation.navigate("Principal")}
+          >
+            <Text>Home</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.NavList}
+            onPress={() => navigation.navigate("Perfil")}
+          >
+            <Text>Perfil</Text>
+          </TouchableOpacity>
       </View>
     </View>
   );

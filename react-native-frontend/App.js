@@ -1,11 +1,14 @@
 import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 
 import Home from "./src/pages/Home";
 import Profile from "./src/pages/Profile";
 import IdeiaForm from "./src/pages/IdeiaForm";
+import ResolucaoDeProblemas from "./src/pages/ResolucaoDeProblemas";
+import PlanejamentoEstrategico from "./src/pages/PlanejamentoEstrategico";
+import IdeiasInovadores from './src/pages/IdeiasInvadores'
 
 const Stack = createNativeStackNavigator();
 
@@ -16,7 +19,10 @@ export default function App() {
         <Stack.Navigator>
           <Stack.Screen name="Principal" component={Home} />
           <Stack.Screen name="Perfil" component={Profile} />
-          <Stack.Screen name="Que tal se..." component={IdeiaForm} />
+          <Stack.Screen name="Como se joga ?" component={IdeiaForm} />
+          <Stack.Screen name="Planejamento estratégico" component={PlanejamentoEstrategico} />
+          <Stack.Screen name="Resolução de problemas" component={ResolucaoDeProblemas} />
+          <Stack.Screen name="Ideias Inovadoras" component={IdeiasInovadores} />
         </Stack.Navigator>
       </NavigationContainer>
     </View>
