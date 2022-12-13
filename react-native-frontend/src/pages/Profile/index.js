@@ -21,7 +21,9 @@ export default function Profile({ navigation }) {
             uri: "https://www.promoview.com.br/uploads/images/unnamed%2819%29.png",
           }}
         />
-        <Text style={styles.nameProfile}>Seu nome</Text>
+        <Text style={styles.nameProfile}>
+          Meu Nome
+        </Text>
         <Form />
         <View style={styles.saveIdeias}>
           <Text style={styles.ideiasSavedMessage}>Ideias Salvas </Text>
@@ -70,18 +72,18 @@ export default function Profile({ navigation }) {
         </View>
       </ScrollView>
       <View style={styles.navigator}>
-      <TouchableOpacity
-            style={styles.NavList}
-            onPress={() => navigation.navigate("Principal")}
-          >
-            <Text>Home</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={styles.NavList}
-            onPress={() => navigation.navigate("Perfil")}
-          >
-            <Text>Perfil</Text>
-          </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.NavList}
+          onPress={() => navigation.navigate("Principal")}
+        >
+          <Text>Home</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.NavList}
+          onPress={() => navigation.navigate("Perfil")}
+        >
+          <Text>Perfil</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );

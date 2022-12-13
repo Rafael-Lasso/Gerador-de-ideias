@@ -15,7 +15,7 @@ export default function Home({ navigation }) {
     <View style={styles.container}>
       <ScrollView>
         <View>
-          <Header />
+          <Header/>
           <View style={styles.card}>
             <View style={styles.Maincard}>
               <Text style={styles.textCard}>Entenda como jogar!</Text>
@@ -185,6 +185,8 @@ const styles = StyleSheet.create({
   buttonText: {
     marginLeft: 8,
     marginTop: 12,
+    alignSelf: "center",
+    justifyContent: "center",
   },
   buttonCard: {
     width: 105,

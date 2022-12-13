@@ -7,11 +7,11 @@ export default function IdeiaForm() {
         <Text style={styles.message}>Gere uma ideia em grupo</Text>
         <Text style={styles.subMessage}>
           Para ser realizado deveram ser feitos dois grupos com pelo menos 4
-          pessoas, enquanto uma pessoa vai falando o que prescisa os
-          participantes vão asinalar os topicos que acreditam ser reelevantes no
+          pessoas, enquanto uma pessoa vai falando o que precisa os
+          participantes vão assinalar os tópicos que acreditam ser relevantes no
           final os grupos deveram escolher qual é a melhor ideia para a situação
-          e defendela, assim quando o responsavel pela escolha escolher uma
-          ideia é ponto para o grupo, quem fizer 5 pontos primeiro ganha
+          e defendê-la, assim quando um responsável escolher uma ideia é ponto
+          para o grupo, quem fizer 5 pontos primeiro ganha
         </Text>
       </View>
     </View>

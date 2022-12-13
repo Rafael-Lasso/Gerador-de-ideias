@@ -1,12 +1,10 @@
-import { StyleSheet, Text, ScrollView, View } from "react-native";
+import { StyleSheet, Text, TextInput, View } from "react-native";
 
 export default function Form() {
   return (
     <View style={styles.container}>
       <View style={styles.content}>
-        <Text style={styles.camp}>Seu Nome</Text>
-        <Text style={styles.camp}>Seunome@email.com</Text>
-        <Text style={styles.camp}>(55) +18 99999-9999</Text>
+        <TextInput placeholder="Digite seu Nome" style={styles.camp}  />
       </View>
     </View>
   );
@@ -20,7 +18,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#f5f5f5",
     width: 350,
     height: "auto",
-    marginTop: 25,
+    marginTop: 85,
     marginLeft: 25,
     borderRadius: 15,
     shadowColor: "#000",
